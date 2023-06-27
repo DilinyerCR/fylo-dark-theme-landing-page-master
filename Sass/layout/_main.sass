@@ -1,0 +1,109 @@
+@use '../abstracts/variables' as v
+
+main
+    padding: 1px 35px
+    background-color: v.$Dark-Blue-main
+
+    // !=====section one=====
+    .section-one
+        text-align: center
+
+        .element
+            margin: 80px 0
+
+            h4
+                margin-top: 20px
+
+            p
+                margin-top: 10px
+
+        .element-one__img-container,
+        .element-two__img-container,
+        .element-tree__img-container,
+        .element-four__img-container
+            margin: 0 auto
+            width: 55px
+
+            img
+                width: 100%
+
+    // !=====section two=====
+    .section-two
+        padding-top: 70px
+
+    .section-two__img-container
+        padding: 0 5px
+        
+        img
+            width: 100%
+
+    h2
+        margin-top: 30px
+        font-size: 1.5rem
+        
+    
+    p
+        margin-top: 14px
+        line-height: 20px
+
+    .cyan-text-container
+        display: flex
+
+        p
+            color: v.$Cyan
+
+        .arrow-container
+            margin: 16px 0 0 6px
+            
+    .subrayado
+        margin-top: 2px
+        width: 140px
+        border-top: 1px solid v.$Cyan
+
+    
+    // !=====section tree=====
+    .section-tree
+        display: flex
+        flex-direction: column
+        gap: 25px
+        margin: 150px 0 320px 0
+
+        .card
+            padding: 25px 20px
+            background-color: v.$Dark-Blue-testimonials
+            border-radius: 4px
+
+            p
+                margin: 0
+
+            .card__user
+                margin-top: 15px
+                display: flex
+
+                .card__user-img-container
+                    margin-right: 15px
+                    width: 30px
+                    display: flex
+                    align-items: center
+
+                    img
+                        width: 100%
+                        border-radius: 50%
+
+        .card__main-paragraph
+            font-size: 1.1rem
+            line-height: 19px
+
+        .card__user-text
+
+            .card__user-text--name
+                margin: 0
+                font-size: 1.1rem
+                font-weight: 700
+
+            .card__user-text--title
+                margin-top: -4px
+                font-size: 1rem
+        
+
+        

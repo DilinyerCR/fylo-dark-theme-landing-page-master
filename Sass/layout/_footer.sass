@@ -1,0 +1,122 @@
+@use '../abstracts/variables' as v
+
+footer
+    padding: 230px 35px 50px 35px
+    background-color: v.$Dark-Blue-footer
+    position: relative
+
+.floating-section
+    padding: 40px 28px
+    background-color: v.$Dark-Blue-header-hero
+    border-radius: 6px
+    line-height: 19px
+    text-align: center
+    position: absolute
+    top: -160px
+    right: 25px
+    left: 25px
+
+    p
+        margin-top: 15px
+
+    form
+        margin-top: 25px
+
+        input
+            width: 100%
+            padding: 16px 28px
+            border-radius: 50px
+            border: none
+            font-size: 1.1rem
+            outline: none
+
+        button
+            margin-top: 20px
+            width: 100%
+            height: 45px
+            border-radius: 50px
+            border: none
+            background: v.$Button-linear-gradient
+            color: v.$White
+            font-weight: 600
+            font-size: 1.2rem
+
+            &:hover
+                cursor: pointer
+                background: v.$Button-hover
+
+// !===location and contact container===
+.footer-section
+    margin-top: 35px
+    display: flex
+    flex-direction: column
+    gap: 60px
+
+.part-one-container__location-container
+    margin-top: 25px
+    display: flex
+
+    p
+        padding: 0 34px 0 0
+
+    img
+        margin: 4px 20px 0 0
+        height: 18px
+
+.part-one-container__contact-container
+    margin-top: 25px
+
+    .phone-container
+        display: flex
+
+        img
+            margin: 4px 20px 0 0
+            width: 14px
+            
+    .email-container
+        margin-top: 20px
+        display: flex
+
+        img
+            margin: 4px 18px 0 0
+            width: 18px
+            height: 13px
+
+.list-container
+    display: flex
+    flex-direction: column
+    gap: 50px
+
+    .list-container__list-one,
+    .list-container__list-two
+        display: flex
+        flex-direction: column
+        gap: 18px
+
+        a:hover
+            &:hover
+                font-weight: 600
+
+
+.social-network-container
+    margin: 0 auto
+    width: 120px
+    display: flex
+    justify-content: space-between
+
+    div
+        width: 30px
+        height: 30px
+        display: flex
+        justify-content: center
+        align-items: center
+        border-radius: 50%
+        border: 1px solid v.$White-80
+
+        &:hover
+            cursor: pointer
+            border: 1px solid v.$Cyan
+
+            i
+                color: v.$Cyan
+
