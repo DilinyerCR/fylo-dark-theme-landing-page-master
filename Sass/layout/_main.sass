@@ -77,11 +77,13 @@ main
             padding: 80px
             align-items: center
 
-
+            .section-two__img-container
+                width: 55%
+            
+            .section-two__text-container
+                width: 45%
 
     .section-two__img-container
-        padding: 0 5px
-        
         img
             width: 100%
 
@@ -102,16 +104,11 @@ main
         line-height: 20px
 
         @include m.large
-            width: 650px
-
-    .section-two__text-container
-        width: 45%
+            width: 500px
 
     .section-two__text-container .p
         @include m.large
-            padding: 0 150px 0 0
             font-size: 1.4rem
-
 
     .cyan-text-container
         display: flex

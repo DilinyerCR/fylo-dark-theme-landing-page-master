@@ -325,9 +325,12 @@ main .section-two {
     padding: 80px;
     align-items: center;
   }
-}
-main .section-two__img-container {
-  padding: 0 5px;
+  main .section-two .section-two__img-container {
+    width: 55%;
+  }
+  main .section-two .section-two__text-container {
+    width: 45%;
+  }
 }
 main .section-two__img-container img {
   width: 100%;
@@ -351,15 +354,11 @@ main .p {
 }
 @media (min-width: 1280px) {
   main .p {
-    width: 650px;
+    width: 500px;
   }
-}
-main .section-two__text-container {
-  width: 45%;
 }
 @media (min-width: 1280px) {
   main .section-two__text-container .p {
-    padding: 0 150px 0 0;
     font-size: 1.4rem;
   }
 }
