@@ -1,9 +1,13 @@
 @use '../abstracts/variables' as v
+@use '../abstracts/mixins' as m
 
 footer
     padding: 230px 35px 50px 35px
     background-color: v.$Dark-Blue-footer
     position: relative
+
+    @include m.large
+        padding: 230px 95px 50px 95px
 
 .floating-section
     padding: 40px 28px
@@ -15,6 +19,15 @@ footer
     top: -160px
     right: 25px
     left: 25px
+
+    @include m.medium
+        margin: 0 auto
+        width: 70%
+
+    @include m.large
+        padding: 50px 70px
+        width: 60%
+        top: -140px
 
     p
         margin-top: 15px
@@ -45,6 +58,28 @@ footer
                 cursor: pointer
                 background: v.$Button-hover
 
+        @include m.large
+            display: flex
+            align-items: center
+            gap: 25px
+
+            input
+                width: 70%
+                height: 45px
+
+            button
+                margin-top: 0
+                width: 200px
+
+    h3
+        @include m.large
+            font-size: 3.2rem
+
+    p
+        @include m.large
+            margin-top: 25px
+            padding: 0 50px
+
 // !===location and contact container===
 .footer-section
     margin-top: 35px
@@ -52,9 +87,26 @@ footer
     flex-direction: column
     gap: 60px
 
+    @include m.large
+        flex-direction: row
+        justify-content: space-between
+        gap: 100px
+
+.footer-section__part-one-container
+    @include m.large
+        display: flex
+        gap: 80px
+
 .part-one-container__location-container
     margin-top: 25px
     display: flex
+
+    @include m.large
+        margin-top: 0
+        width: 350px
+
+        p
+            line-height: 22px
 
     p
         padding: 0 34px 0 0
@@ -82,10 +134,16 @@ footer
             width: 18px
             height: 13px
 
+    @include m.large
+        margin-top: 0
+
 .list-container
     display: flex
     flex-direction: column
     gap: 50px
+
+    @include m.large
+        flex-direction: row
 
     .list-container__list-one,
     .list-container__list-two
@@ -97,12 +155,14 @@ footer
             &:hover
                 font-weight: 600
 
-
 .social-network-container
     margin: 0 auto
     width: 120px
     display: flex
     justify-content: space-between
+
+    @include m.large
+        width: 160px
 
     div
         width: 30px
@@ -112,6 +172,10 @@ footer
         align-items: center
         border-radius: 50%
         border: 1px solid v.$White-80
+
+        @include m.large
+            width: 40px
+            height: 40px
 
         &:hover
             cursor: pointer
