@@ -389,6 +389,7 @@ main .section-tree {
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
     justify-items: center;
+    justify-content: center;
   }
   main .section-tree .section-tree__card1 {
     grid-column: 1/2;
@@ -417,6 +418,23 @@ main .section-tree {
   main .section-tree .card p {
     padding: 0 5px;
     font-size: 1.3rem;
+  }
+}
+main .section-tree .fake-container {
+  position: relative;
+}
+main .section-tree .fake-container .quotes {
+  width: 30px;
+  position: absolute;
+  top: -20px;
+  left: 6px;
+}
+main .section-tree .fake-container .section-tree__card1 {
+  position: relative;
+}
+@media (min-width: 1280px) {
+  main .section-tree .fake-container .section-tree__card1 {
+    min-width: 324px;
   }
 }
 main .section-tree .card {
@@ -454,6 +472,11 @@ main .section-tree .card__user-text .card__user-text--title {
   margin-top: 3px;
   font-size: 1rem;
 }
+@media (min-width: 1280px) {
+  main .section-tree__card2, main .section-tree__card3 {
+    min-width: 324px;
+  }
+}
 
 footer {
   padding: 230px 35px 50px 35px;
@@ -476,6 +499,22 @@ footer {
   top: -160px;
   right: 25px;
   left: 25px;
+}
+.floating-section .input-container {
+  display: flex;
+  flex-direction: column;
+}
+.floating-section .input-container .error {
+  margin-top: 8px;
+  padding-left: 20px;
+  color: hsl(0, 100%, 63%);
+  text-align: left;
+}
+.floating-section .input-container .thanks {
+  margin-top: 8px;
+  padding-left: 20px;
+  color: hsl(176, 68%, 64%);
+  text-align: left;
 }
 @media (min-width: 768px) {
   .floating-section {
@@ -514,6 +553,7 @@ footer {
   color: hsl(0, 0%, 100%);
   font-weight: 600;
   font-size: 1.2rem;
+  align-self: flex-start;
 }
 .floating-section form button:hover {
   cursor: pointer;
@@ -525,8 +565,11 @@ footer {
     align-items: center;
     gap: 25px;
   }
-  .floating-section form input {
+  .floating-section form .input-container {
     width: 70%;
+  }
+  .floating-section form .input-container input {
+    width: 100%;
     height: 45px;
   }
   .floating-section form button {
