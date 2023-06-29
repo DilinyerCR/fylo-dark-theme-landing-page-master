@@ -13,8 +13,9 @@ function validation(email) {
   return emailRegex.test(email);
 }
 
-button.addEventListener("click", () => {
+button.addEventListener("click", (event) => {
   const email = input.value;
+  event.preventDefault();
   if (validation(email)) {
     input.value = "";
     thanks.textContent = "Thank you, you have been successfully registered!";
